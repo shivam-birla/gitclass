@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaquery</title>
+</head>
+<style>
+    .div-first{
+        display: flex;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    #first{
+        font-size: 50px;
+        border: 3px solid;
+        background-color: lightgray;
+        color: black;
+        text-align: center;
+    }
+    @media only screen and (min-width:600px) {
+       #first{
+        background-color: aqua;
+        font-size: 35px;
+       } 
+    }
+    .second{
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid;
+        justify-content: space-around;
+        flex-grow: 1;
+    }
+    .coloumn{
+        border: 1px solid;
+        height: 200px;
+        width: 200px;
+        background-color: burlywood;
+    
+    }
+   
+    @media only screen and (max-width:900px){
+        .coloumn{
+        width:49%;
+       
+        height: 200px;
+        background-color: cyan;
+    }   
+    }
+    @media only screen and (max-width:600px){
+        .coloumn{
+            width: 99%;
+           background-color: yellow;
+        }
+    }
+   
+</style>
+<body><div class="div-first">
+    <div id="first">
+        THIS IS MY FIRST RESPONSIVE DESIGN
+    </div></div>
+<div class="second">
+    <div class="coloumn">coloumn 1 <br><small>some text</small></div>
+    <div class="coloumn">coloumn 2</div>
+    <div class="coloumn">coloumn 3</div>
+    <div class="coloumn">coloumn 4</div>
+</div>
+</body>
+</html>

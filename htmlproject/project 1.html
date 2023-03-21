@@ -1,76 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project-1</title>
+    <style>
+        #a {
+            background-color: #FD5D5D;
+            text-align: center;
+           
+            border-radius: 5px;
+        }
+
+        a {
+            color: #07121b;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(12, 44, 175);
+        }
+
+        button {
+            background-color: rgba(236, 236, 231, 0.834);
+        }
+
+        p {
+            background-color: #ABD9FF;
+        }
+
+        li {
+            background-color: #ABD9FF;
+        }
+
+        main {
+            background-color: #FD5D5D;
+        }
+
+        tr {
+            text-align: center;
+
+        }
+
+        footer {
+            background-color: #ABD9FF;
+            text-align: center;
+        }
+
+        table {
+            background-color: #ABD9FF;
+            text-align: center;
+            border-collapse: collapse;
+            width: 800px;
+            border-radius: 10px;
+            margin: auto;
+
+        }
+
+        #d {
+            text-align: center;
+            align-items: center;
+        }
+        #c{
+            text-align: center;
+        }
+
+        caption {
+            border: 1px solid black;
+            background-color: #1a80da;
+        }
+    </style>
 </head>
+
 <body>
     <div>
-    <main><section>
-        <h1>welcome to little taco shop</h1>
-        <ul>
-            <li><a href="./sub-project-a.html" target="_blank">about us</a></li>
-            <li><a href="#">our menu</a></li>
-            <li><a href="#">store house</a></li>
-            <li><a href="./sub-project-b.html">contact us</a></li>
-         </ul>
-         <img src="https://www.lagunabeachmagazine.com/wp-content/uploads/2013/03/Ahi-Tacos-and-Wine.jpg" alt="taco with wine" width="200px">
-         <p>taco and a drink</p><hr>
-        </section>
-        <section>
-            <h2>ABOUT <span style="text-decoration: underline dotted;">LTS</span> </h2>
-            <p><span style="text-decoration: underline dotted;">LTS</span> was founded in 2022.Our shop was built from a <b>love of tacos</b>.We hope our shop adds a unique and interesting place to our little town.</p>
-            <h3>Taco Trivia</h3>
-            <ul>
-               <p> <li>when did tacos first appear in the UNITED STATES</li></p>
-            </ul>
+        <main>
+            <nav id="a">
+                <h1>Welcome To Little Taco Shop</h1>
+                <hr>
+
+                <section id="b">
+                    <button><a href="./sub-project-a.html" target="_self">About us</a></button>
+                    <button><a href="#">Our Menu</a></button>
+                    <button><a href="#">Store House</a></button>
+                    <button><a href="./sub-project-b.html">Contact Us</a></button>
+                </section>
+                <hr>
+
+                <img src="https://www.lagunabeachmagazine.com/wp-content/uploads/2013/03/Ahi-Tacos-and-Wine.jpg"
+                    alt="taco with wine" width="200px">
+                <p id="taco">Taco and a drink</p>
+
+            </nav>
+            <section id="c">
+                <h2>ABOUT <span style="text-decoration: underline dotted;">LTS</span> </h2>
+                <p><span style="text-decoration: underline dotted;">LTS</span> was founded in 2022.Our shop was built
+                    from a <b>love of tacos</b>.We hope our shop adds a unique and interesting place to our little town.
+                </p>
+                <h3>Taco Trivia</h3>
+                <ul>
+                    <p>
+                        <li>when did tacos first appear in the UNITED STATES</li>
+                    </p>
+                </ul>
+                <hr>
+            </section>
+            <section id="d">
+                <h3>OUR MENU</h3>
+                <table border="1">
+                    <caption>our tacos</caption>
+                    <tr>
+                        <th>Tacos</th>
+                        <th>QTY</th>
+                        <th>price</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">crunchy</th>
+                        <td>1</td>
+                        <td>$1.50</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>$2.50</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>$3.25</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">soft</th>
+                        <td>1</td>
+                        <td>$2.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>$3.50</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>$4.50</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">chips & salsa $2</td>
+                    </tr>
+                </table><br>
+                <button><a href="#">back to top</a></button>
+            </section>
             <hr>
-  </section>
-<section>
-    <h3>OUR MENU</h3>
-    <table border="1">
-        <caption style="border: 1px solid black;">our tacos</caption>
-        <tr>
-            <th>Tacos</th>
-            <th>QTY</th>
-            <th>price</th>
-        </tr>
-        <tr>
-            <th rowspan="3">crunchy</th>
-            <td>1</td>
-            <td>$1.50</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>$2.50</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>$3.25</td>
-        </tr>
-        <tr>
-            <th rowspan="3">soft</th>
-            <td>1</td>
-            <td>$2.00</td>
-         </tr>
-         <tr>
-            <td>2</td>
-            <td>$3.50</td>
-         </tr>
-         <tr>
-            <td>3</td>
-            <td>$4.50</td>
-         </tr>
-         <tr>
-            <td colspan="3">chips & salsa $2</td>
-         </tr>
-    </table><br>
-    <a href="#">back to top</a>
-</section><hr>
-<footer>copyright the little taco shop</footer>
-    </main>
-</div>
+            
+            <footer>copyright the little taco shop</footer>
+        </main>
+    </div>
 </body>
+
 </html>
