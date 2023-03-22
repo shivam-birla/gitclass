@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>john</title>
+    <style>
+        .section1 {
+            display: flex;
+            justify-content: center;
+            column-gap: 85px;
+            background-color: lightgray;
+            width: 100%;
+        }
+
+        .side1 {
+            display: flex;
+            flex-direction: column;
+            max-width: 506px;
+            padding: 20px;
+            text-transform: capitalize;
+        }
+
+        .side2 {
+            padding: 20px;
+        }
+
+        .h1 {
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 60px;
+        }
+
+        .paragraph p {
+            line-height: 23.5px;
+        }
+
+        .button button {
+            background-color: rgb(245, 22, 22);
+            color: white;
+            width: 167px;
+            height: 35px;
+            border: none;
+        }
+
+        button:hover {
+            background-color: coral;
+        }
+
+        @media only screen and (max-width:585px) {
+            .section1 {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                column-gap: normal;
+            }
+
+            p,
+            .h1,
+            .button {
+                text-align: center;
+            }
+
+            .side1 {
+                max-width: 370px;
+                padding: 0px;
+            }
+
+            .side2 {
+                padding: 0px;
+            }
+        }
+
+        /* section1 styling end */
+        #recent-viewall {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            column-gap: 30%;
+            max-width: 100%;
+        }
+
+        .section2 {
+            background-color: #EDF7FA;
+        }
+
+        .recent {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+
+        .viewall {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #00A8CC;
+        }
+
+        .viewall:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        @media screen and (min-width:1000px) {
+            #recent-viewall {
+                display: flex;
+                justify-content: center;
+                padding: 0;
+                column-gap: 730px;
+                max-width: 100%;
+            }
+        }
+
+        /* section2 A styling end */
+        .cards {
+            display: flex;
+            justify-content: center;
+            column-gap: 3%;
+        }
+
+        .card1 {
+            background-color: white;
+            padding: 0px 10px;
+        }
+
+        .card1 .col1 {
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 38px;
+        }
+
+        .card1 .col3 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 23.5px;
+            width: 368px;
+        }
+
+        @media only screen and (max-width:785px) {
+            .cards {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 50px;
+
+            }
+
+            .card1 .col3,
+            .col2,
+            .col1 {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 23.5px;
+                width: auto;
+                text-align: left;
+            }
+        }
+
+        /* section B STYLING end */
+        .section3 {
+            display: flex;
+            justify-content: center;
+            column-gap: 18px;
+        }
+
+        .first-span {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 44px;
+            letter-spacing: 0px;
+            text-align: left;
+
+        }
+
+        .second-span {
+            background-color: rgb(29, 29, 88);
+            color: azure;
+            margin-right: 5%;
+            padding: 0 10px;
+            border-radius: 10px;
+        }
+
+        p.dashboard {
+            color: rgba(0, 0, 0, 0.5);
+
+        }
+
+        .side-paragraph {
+            max-width: 650px;
+            font-size: 16px;
+        }
+
+        .content {
+            text-align: left;
+        }
+
+        .featured {
+             margin: auto;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 60px;
+            text-align: left;
+            max-width: 900px;
+        }
+        @media only screen and (max-width:426px){
+            .section3{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+            }
+            .side-paragraph{
+                font-size: 16px;
+                width: auto;
+            }
+            .image>img{
+                    width: 100%;
+            }
+            .first-span{
+                font-size: 20px;
+            }
+            .side-paragraph{
+                text-align: left;
+            }
+            p.dashboard{
+                text-align: left;
+            }
+        }
+        @media screen and (min-width:584px) and (max-width:630px){
+            .section3{
+                background-color: chocolate;
+            }
+            .side-paragraph{
+                text-align: left;
+            }
+            p.dashboard{
+                text-align: left;
+            }
+            .first-span{
+                font-weight: 200;
+            }
+        }
+        .image-icons{
+            display: flex;
+            justify-content: center;
+            column-gap: 15px;
+            margin-top: 10%;
+        }
+        .copyright{
+          text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <section class="section1">
+        <div class="side1">
+            <div class="h1">Hi, I am shivam,
+                primathon student</div>
+            <div class="paragraph">
+                <p> Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. </p>
+            </div>
+            <div class="button"><button>Download resume</button></div>
+        </div>
+        <div class="side2"><img src="./../../Ellipse 1.png" alt=""></div>
+    </section>
+    <section class="section2">
+        <div id="recent-viewall">
+            <div class="recent">Recent post</div>
+            <div class="viewall">Viewall</div>
+        </div>
+        <div class="cards">
+            <div class="card1">
+                <p class="col1"> Making a design system from scratch</p>
+                <p class="col2">12 Feb 2020 | Design, Pattern</p>
+                <p class="col3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                    consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+            <div class="card1">
+                <p class="col1"> Creating pixel perfect icons in Figma</p>
+                <p class="col2">12 Feb 2020 | Figma, Icon Design</p>
+                <p class="col3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                    consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+        </div>
+    </section>
+    <div class="featured">
+        <p>Featured Works</p>
+    </div>
+    <section class="section3">
+        <div class="image"><img src="../../Rectangle 30.png" alt=""></div>
+        <div class="content">
+            <span class="first-span">Designing Dashboards</span>
+            <p class="dashboard"><span class="second-span">2020</span>Dashboard</p>
+            <p class="side-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="image"><img src="../../Rectangle 32.png" alt=""></div>
+        <div class="content">
+            <span class="first-span">Vibrant Portraits of 2020</span>
+            <p class="dashboard"><span class="second-span">2018</span>Illustration</p>
+            <p class="side-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="image"><img src="../../Rectangle 34.png" alt=""></div>
+        <div class="content">
+            <span class="first-span">36 Days of Malayalam type</span>
+            <p class="dashboard"><span class="second-span">2018</span>Typography</p>
+            <p class="side-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+    </section>
+    <footer><div class="image-icons">
+        <div class="footer"><img src="../../fb.png" alt=""></div>
+    <div class="footer"><img src="../../Vector.png" alt=""></div>
+    <div class="footer"><img src="../../Vector (1).png" alt=""></div>
+    <div class="footer"><img src="../../Linkedin.png" alt=""></div></footer></div>
+    <div class="copyright">Copyright ©2020 All rights reserved </div>
+</body>
+
+</html>
