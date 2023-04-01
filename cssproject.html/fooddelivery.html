@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food delivery</title>
+</head>
+<style>
+    header {
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        margin-bottom: 50px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 114px;
+        margin-top: 63px;
+        padding-right: 20px;
+        font-weight: 800;
+    }
+
+    .head-image {
+        margin-left: 20px;
+        vertical-align: middle;
+        margin-top: 26.12px;
+    }
+
+    /* styling1 end */
+    /*    
+   *{
+    margin: 0;
+    padding: 0;
+   } */
+    .section2 {
+        background-image: url(../../Rectangle\ 48.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        min-height: 619px;
+    }
+
+    .one-p {
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 700;
+        height: 36px;
+        text-align: center;
+    }
+
+    .two-p {
+        font-family: Poppins;
+        font-size: 58px;
+        font-weight: 700;
+        box-sizing: content-box;
+        max-width: 937px;
+        height: 160px;
+        text-align: center;
+        line-height: 80px;
+
+    }
+
+    .three-p {
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 38px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        margin-top: 47px;
+        margin-bottom: 10px;
+    }
+
+    .four-btn {
+        display: flex;
+        column-gap: 34px;
+    }
+
+    button {
+        border-radius: 30px;
+        height: 68px;
+        width: 236px;
+        border: none;
+        color: white;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.10000000149011612px;
+
+
+    }
+
+    .one-btn {
+        background: #FA4A0C;
+    }
+
+    .second-btn {
+        background: transparent;
+        border: 1px solid;
+    }
+
+    /* styling 2 end */
+    .images {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 480px;
+    }
+
+    .image-1 {
+        position: relative;
+        bottom: 180px;
+        right: 50px;
+
+    }
+
+    .image-2 {
+        position: relative;
+        bottom: 80px;
+        right: 80px;
+        margin-bottom: 129px;
+    }
+
+    .para-appworks {
+        font-family: Poppins;
+        font-size: 44px;
+        font-weight: 600;
+        line-height: 36px;
+        letter-spacing: 0.10000000149011612px;
+        text-align: left;
+
+    }
+
+    .how-hr {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    hr {
+        width: 50%;
+        color: #737373;
+    }
+
+    .section-3 {
+        display: flex;
+        justify-content: center;
+        column-gap: 100px;
+    }
+
+    .login-page2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .login-page2 h3 {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: left;
+        color: #FA4A0C;
+    }
+
+    .login-page2 p {
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .login-page2 h4 {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: left;
+        color: #737373;
+    }
+    @media screen and (max-width:450px) {
+        header {
+            overflow-x: auto;
+        }
+
+        .navbar {
+            column-gap: 5px;
+        }
+
+        .head-image {
+            margin-left: 2px;
+            vertical-align: middle;
+            margin-top: 26.12px;
+        }
+
+        .head-image img {
+            width: 100px;
+        }
+
+        .section2 {
+            color: black;
+            background-image: none;
+        }
+
+        .one-p {
+            font-family: Poppins;
+            font-size: 16px;
+            color: #737373;
+            font-weight: 700;
+            text-align: center;
+            /* margin-bottom: -50px; */
+        }
+
+        .two-p {
+            font-family: Poppins;
+            font-size: 36px;
+            font-weight: 700;
+            max-width: 937px;
+            text-align: center;
+            line-height: 42px;
+            /* margin-bottom: -50px; */
+        }
+
+        .three-p {
+            color: #737373;
+        }
+
+        .four-btn {
+            display: flex;
+            /* column-gap: 34px; */
+            display: flex;
+            flex-direction: column;
+            row-gap: 13px;
+        }
+
+        .second-btn {
+            background-color: azure;
+            color: #FA4A0C;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            height: 300px;
+            position: relative;
+        }
+
+        .image-1 img {
+            width: 160px;
+            position: relative;
+            top: 120px;
+            left: 53px;
+        }
+
+        .image-2 img {
+            width: 160px;
+            position: relative;
+            left: 65px;
+            top: 40px;
+        }
+
+        .para-appworks {
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 36px;
+            letter-spacing: 0.10000000149011612px;
+            text-align: center;
+        }
+
+        .how-hr {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        hr {
+            width: 100%;
+            color: #737373;
+        }
+        .login-page2 {
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+    }
+    .login-page2 p {
+       text-align: center;
+    }
+    .login-page2 h4 {
+       text-align: center;
+    }
+    .login-page1{
+        align-self: center;
+    }
+
+    .section-3 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    /* section3 styling end */
+    }
+</style>
+
+<body>
+    <header>
+        <div class="head-image"><img src="../../Bella Olonje logo 111 1.png" height="107.6px" alt=""></div>
+        <div class="navbar">
+            <div class="first">
+                <p> HOME</p>
+            </div>
+            <div class="second">
+                <p> PRODUCT</p>
+            </div>
+            <div class="third">
+                <p> FAQ</p>
+            </div>
+            <div class="fourth">
+                <p> CONTACT</p>
+            </div>
+        </div>
+    </header>
+    <div class="section2">
+        <div class="one-p">
+            <h3>Food App</h3>
+        </div>
+        <div class="two-p">
+            <p>Why stay hungry when
+                you can order form Bella Onojie</p>
+        </div>
+        <div class="three-p">
+            <h4>Download the bella onoje’s food app now on</h4>
+        </div>
+        <div class="four-btn">
+            <button class="one-btn">PLAYSTORE</button>
+            <button class="second-btn">APPSTORE</button>
+        </div>
+    </div>
+    <div class="images">
+        <div class="image-1"><img src="../../Rectangle.png" alt=""></div>
+        <div class="image-2"><img src="../../Rectangle (1).png" alt=""></div>
+    </div>
+    <div class="how-hr">
+        <hr>
+        <p class="para-appworks">HOW THE APP WORKS</p>
+    </div>
+    <section class="section-3">
+        <div class="login-page1"><img src="../../login-page.png.png" alt=""></div>
+        <div class="login-page2">
+            <h3>create an account</h3>
+            <p>Create/login to an existing
+                account to get started</p>
+            <h4>An account is created with your email
+                and a desired password</h4>
+        </div>
+    </section>
+<section class="section-4"></section>
+</body>
+
+</html>
