@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trafalger</title>
+</head>
+<style>
+    header {
+        margin-top: 56px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 90px;
+    }
+
+    .trafalger {
+        display: flex;
+        column-gap: 5px;
+        font-size: 26px;
+    }
+
+
+    .round {
+        width: 30px;
+        border-radius: 50%;
+        background: #458FF6;
+        color: white;
+        text-align: center;
+        font-weight: 800;
+    }
+
+    .navbar {
+        display: flex;
+        column-gap: 40px;
+        color: #1F1534;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .section2,
+    .section5 {
+        display: flex;
+        justify-content: center;
+        column-gap: 90px;
+    }
+
+    .block1 {
+        width: 440px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 25px;
+        margin-left: 66px;
+    }
+
+    .first-block {
+        font-family: Mulish;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 56px;
+        text-align: left;
+    }
+
+    .second-block {
+        font-family: Mulish;
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 32px;
+        text-align: left;
+        color: grey;
+    }
+
+    .third-block button {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        height: 56px;
+        width: 200px;
+        border-radius: 55px;
+        text-align: center;
+        background: #458FF6;
+        color: white;
+        border: none;
+        text-transform: capitalize;
+    }
+
+    .dotswrapper {
+        width: 80px;
+        display: flex;
+        row-gap: 16px;
+        column-gap: 19px;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        top: 170px;
+    }
+
+    .dotswrapper1 {
+        width: 80px;
+        display: flex;
+        row-gap: 16px;
+        column-gap: 19px;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        top: 2650px;
+        right: 0px;
+
+    }
+
+    .dots {
+        width: 10px;
+        height: 10px;
+        background: linear-gradient(338.5deg, #97C3F9 -345.7%, #93C1F9 1098.35%);
+        border-radius: 50%;
+    }
+
+    .line-service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 192px;
+        row-gap: 22px;
+    }
+
+    .l1 {
+        font-family: Mulish;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .l2 {
+        height: 2px;
+        width: 56px;
+        left: 772px;
+        top: 1049px;
+        border-radius: 5px;
+        background: #000000;
+        ;
+    }
+
+    .l3 {
+        font-family: Mulish;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 30px;
+        text-align: center;
+        width: 952px;
+        color: grey;
+    }
+
+    .section4 {
+        background-image: url(Vector.png);
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-top: 30px;
+        margin-top: 30px;
+        row-gap: 37px;
+        column-gap: 5px;
+
+    }
+
+    .section-one {
+        padding: 20px;
+        width: 270px;
+        height: 240px;
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        border-radius: 20px;
+        border: 1px solid white;
+        box-shadow: 10px 40px 50px 0px #E5E9F666;
+
+    }
+
+    .first-heading {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .second-heading {
+        font-family: Mulish;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: gray;
+        width: 266px;
+    }
+
+    .learn {
+        text-align: center;
+        margin-top: 72px;
+        margin-bottom: 220px;
+    }
+
+    .learn1 button {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        height: 56px;
+        width: 200px;
+        border-radius: 55px;
+        text-align: center;
+        background: transparent;
+        color: #458FF6;
+        border: 1px solid #458FF6;
+        text-transform: capitalize;
+    }
+
+    .learn button {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        height: 56px;
+        width: 200px;
+        border-radius: 55px;
+        text-align: center;
+        background: transparent;
+        color: #458FF6;
+        border: 1px solid #458FF6;
+        text-transform: capitalize;
+    }
+
+    .section4-5 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 209px;
+    }
+
+    .section6 {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 266px;
+        border-radius: 24px;
+        width: 1120px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    }
+
+    .customer-saying {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .saying {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: white;
+        margin: 64px auto 25px auto;
+    }
+
+    .edward {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 89px;
+        column-gap: 110px;
+    }
+
+    .name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+    .edwardimage-name {
+        display: flex;
+        column-gap: 40px;
+
+    }
+
+    .quote {
+        width: 420px;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .image img {
+        border-radius: 50%;
+        border: 5px solid rgb(247, 250, 247);
+    }
+
+    .edward-name {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .edward-circle {
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+</style>
+
+<body>
+    <header>
+        <div class="trafalger">
+            <div class="round">T</div>
+            <span class="t">Trafalger</span>
+        </div>
+        <div class="navbar">
+            <span class="menu">Home</span>
+            <span class="menu">Find a doctor</span>
+            <span class="menu">Apps</span>
+            <span class="menu">Testimonials</span>
+            <span class="menu">About us</span>
+        </div>
+    </header>
+    <section class="section2">
+        <div class="block1">
+            <div class="first-block">
+                <span>Virtual healthcare for you</span>
+            </div>
+            <div class="second-block">
+                <span>Trafalgar provides progressive, and affordable
+                    healthcare, accessible on mobile and online
+                    for everyone</span>
+            </div>
+            <div class="third-block"><button>consult today</button></div>
+        </div>
+        <div class="block2"><img src="../tranfalger-images/trafalgar-header illustration 1.png" width="693px" alt="">
+        </div>
+    </section>
+    <div class="dotswrapper">
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+    </div>
+    <div class="line-service">
+        <span class="l1">Our services</span>
+        <hr class="l2">
+        <span class="l3">We provide to you the best choiches for you. Adjust it to your health needs and make sure your
+            undergo treatment with our highly qualified doctors you can consult with us which type of service is
+            suitable for your health</span>
+    </div>
+    <div class="section4">
+        <div class="section-one">
+            <img src="search.png" width="100px" alt="">
+            <span class="first-heading">Search doctor</span>
+            <span class="second-heading">Choose your doctor from thousands of specialist, general, and trusted
+                hospitals</span>
+        </div>
+        <div class="section-one">
+            <img src="bottle.png" width="85px" alt="">
+            <span class="first-heading">Online pharmacy</span>
+            <span class="second-heading">Buy your medicines with our mobile application with a simple delivery
+                system</span>
+        </div>
+        <div class="section-one">
+            <img src="track.png" width="75px" alt="">
+            <span class="first-heading">Consultation</span>
+            <span class="second-heading">Free consultation with our trusted doctors and get the best
+                recomendations</span>
+        </div>
+        <div class="section-one">
+            <img src="rayperpad.png" width="100px" alt="">
+            <span class="first-heading">Details info</span>
+            <span class="second-heading">Free consultation with our trusted doctors and get the best
+                recomendations</span>
+        </div>
+        <div class="section-one">
+            <img src="box.png" width="130px" height="145px" alt="">
+            <span class="first-heading">Emergency care</span>
+            <span class="second-heading">You can get 24/7 urgent care for yourself or your children and your
+                lovely family</span>
+        </div>
+        <div class="section-one">
+            <img src="personpad.png" width="100px" alt="">
+            <span class="first-heading">Tracking</span>
+            <span class="second-heading">Track and save your medical history and health data </span>
+        </div>
+    </div>
+    <div class="learn"><button>Learn more</button></div>
+    <section class="section4-5">
+        <div class="section5">
+            <div class="block1-image"><img src="trafalgar-illustration sec02 1.png" alt=""></div>
+            <div class="block1">
+                <div class="first-block">
+                    <span>Leading healthcare provider</span>
+                </div>
+                <hr style="width: 60px;  position: relative;right: 180px;">
+                <div class="second-block">
+                    <span>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for
+                        everyone. To us, it’s not just work. We take pride
+                        in the solutions we deliver</span>
+                </div>
+                <div class="learn1"><button>Learn more</button></div>
+            </div>
+
+        </div>
+
+        <div class="section5">
+            <div class="block1">
+                <div class="first-block">
+                    <span>Download our mobile apps</span>
+                </div>
+                <hr style="width: 60px;  position: relative;right: 180px; ">
+                <div class="second-block">
+                    <span>Our dedicated patient engagement app and web portal allow you to access information
+                        instantaneously (no tedeous form, long calls, or administrative hassle) and securely</span>
+                </div>
+                <div class="learn1"><button>Download <img src="arrow.png" alt="" style="vertical-align: middle;">
+                    </button></div>
+            </div>
+            <div class="block1-image"><img src="trafalgar-illustration sec03 1.png" alt=""></div>
+        </div>
+    </section>
+    <div class="dotswrapper1">
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+    </div>
+    <div class="section6">
+        <div class="customer-saying">
+            <span class="saying">What our customer are saying</span>
+            <hr style="width: 60px;  ">
+        </div>
+        <div class="edward">
+            <div class="edwardimage-name">
+                <div class="image"><img src="edward.png" alt=""></div>
+                <div class="name">
+                    <span class="edward-name">Edward Newgate</span>
+                    <span class="edward-circle">Founder Circle</span>
+                </div>
+            </div>
+            <span class="quote">“Our dedicated patient engagement app and web portal allow you to access information
+                instantaneously (no tedeous form, long calls,
+                or administrative hassle) and securely”
+            </span>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
